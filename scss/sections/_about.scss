@@ -1,0 +1,7 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.logo-main {
+  width: 250px;
+  height: auto;
+}

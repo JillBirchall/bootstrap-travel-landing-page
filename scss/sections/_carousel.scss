@@ -1,0 +1,37 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.carousel-caption {
+  height: 100%;
+
+  .slideshow-country {
+    @include absoluteHorizontalCenter(50%);
+  }
+
+  .slideshow-btn {
+    @include absoluteHorizontalCenter(15%);
+    font-size: 0.8rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.slideshow-image {
+  height: 50vh;
+  object-fit: cover;
+  position: relative;
+
+  @media (orientation: landscape) {
+    height: 100vh;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 80vh;
+  }
+}
+
+.slideshow-country {
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+}

@@ -1,0 +1,74 @@
+@use "../custom" as *;
+
+.navbar {
+  @include media-breakpoint-up(lg) {
+    height: $navbar-height;
+  }
+
+  .nav-links {
+    width: 100%;
+
+    .nav-link-set {
+      width: 100%;
+
+      .nav-item {
+        .dropdown-menu {
+          background-color: $primary;
+
+          .dropdown-item {
+            color: $white;
+
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+
+        .nav-link {
+          font-weight: 500;
+          color: $white !important;
+
+          &:hover {
+            color: $secondary !important;
+          }
+        }
+      }
+    }
+  }
+
+  .search-input {
+    width: 150px;
+    height: 80%;
+  }
+
+  .search-btn {
+    border: none;
+
+    i {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      background-color: $primary;
+
+      i {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  img {
+    height: auto;
+    width: 30px;
+
+    @include media-breakpoint-up(lg) {
+      top: 5px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 80px;
+    }
+  }
+}

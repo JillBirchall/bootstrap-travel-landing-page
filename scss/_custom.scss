@@ -1,0 +1,12 @@
+//Theme Colours
+$dark-blue: #001674;
+$light-blue: #26cfff;
+
+//Overrides
+$primary: $dark-blue;
+$secondary: $light-blue;
+
+//My Variables
+$navbar-height: 45px;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

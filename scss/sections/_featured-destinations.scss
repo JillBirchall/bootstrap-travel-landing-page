@@ -1,0 +1,40 @@
+@use "../custom" as *;
+
+.featured-destination {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    width: 45%;
+  }
+
+  .destination-name {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
+    z-index: 1;
+  }
+
+  .destination-img {
+    object-fit: cover;
+    object-position: 0 50%;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease-in;
+    -webkit-transition: transform 0.2s ease-in;
+    -moz-transition: transform 0.2s ease-in;
+    -ms-transition: transform 0.2s ease-in;
+    -o-transition: transform 0.2s ease-in;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .destination-img {
+      transform: scale(1.2);
+    }
+  }
+}

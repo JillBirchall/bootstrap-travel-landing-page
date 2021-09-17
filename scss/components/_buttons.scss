@@ -1,0 +1,13 @@
+@use "../custom" as *;
+
+.btn {
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $primary;
+  }
+
+  &:focus {
+    outline: 1px solid $secondary;
+  }
+}

@@ -1,0 +1,24 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.tour-card {
+  width: 16rem;
+  transition: transform 0.2s ease-in;
+
+  img {
+    height: 45%;
+    overflow: hidden;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 20rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+}
