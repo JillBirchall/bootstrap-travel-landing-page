@@ -4,6 +4,8 @@ A travel themed landing page created using Bootstrap v5 and SCSS. I created this
 
 ## Photograph Attributions
 
+I created the logo used for this website as part of a Adobe PhotoShop Daily Creative Challenge I completed in 2020. The Behance project can be found here: [Behance Project Link](https://www.behance.net/gallery/99486457/Photoshop-DCC-22nd-June-to-26th-June-2020)
+
 The photographs used in this website were either taken by myself or were taken from Pixabay or Unsplash.
 
 The photographs of Petra (Jordan card), Macchu Picchu (Peru card), the elephant (Kenya card) and Peles Castle (Romania tour card) were taken by myself and copyright applies to these.
