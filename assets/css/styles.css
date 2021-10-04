@@ -11182,16 +11182,9 @@ textarea.form-control-lg {
 
 .carousel-caption {
   height: 100%;
-}
-.carousel-caption .slideshow-country {
-  position: absolute;
-  right: 50%;
-  bottom: 50%;
-  transform: translateX(50%);
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .carousel-caption .slideshow-btn {
   position: absolute;
@@ -11202,7 +11195,8 @@ textarea.form-control-lg {
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
   -o-transform: translateX(50%);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  width: 200px;
 }
 @media (min-width: 576px) {
   .carousel-caption .slideshow-btn {
@@ -11226,7 +11220,8 @@ textarea.form-control-lg {
   }
 }
 
-.slideshow-country {
+.slideshow-country,
+.slideshow-description {
   text-shadow: 5px 5px 20px black;
 }
 

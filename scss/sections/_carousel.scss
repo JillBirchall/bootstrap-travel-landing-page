@@ -3,14 +3,14 @@
 
 .carousel-caption {
   height: 100%;
-
-  .slideshow-country {
-    @include absoluteHorizontalCenter(50%);
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .slideshow-btn {
     @include absoluteHorizontalCenter(15%);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    width: 200px;
 
     @include media-breakpoint-up(sm) {
       font-size: 1rem;
@@ -32,6 +32,7 @@
   }
 }
 
-.slideshow-country {
+.slideshow-country,
+.slideshow-description {
   text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
 }
